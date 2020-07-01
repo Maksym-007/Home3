@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeTask_4</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin-right: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Собеседование Онлайн</h1>
+    <form name="questions" action="http://fom.in.ua/echo">
+      <h3 class="age">Сколько вам лет?</h3>
+      <ul class="ageList">
+        <li class="ageAsk">
+          <p><input type="radio" name="age" value="20" checked />20-30</p>
+        </li>
+        <li class="ageAsk">
+          <p><input type="radio" name="age" value="30" />31-40</p>
+        </li>
+        <li class="ageAsk">
+          <p><input type="radio" name="age" value="10" />41-50</p>
+        </li>
+      </ul>
+      <h3>Ваш опыт работы?</h3>
+      <ul class="expiriens list">
+        <li class="exspiriens_ask">
+          <p>
+            <input type="radio" name="expiriens" value="10" checked />Без опыта
+          </p>
+        </li>
+        <li class="expiriens_ask">
+          <p><input type="radio" name="expiriens" value="20" />1-3</p>
+        </li>
+        <li class="expiriens_ask">
+          <p><input type="radio" name="expiriens" value="30" />Более 3-х лет</p>
+        </li>
+      </ul>
+      <h3>Перечислите с чем вам приходилось работать!</h3>
+      <ul class="skill list">
+        <li class="skill_ask">
+          <p><input type="radio" name="skill" value="5" checked/>HTML</p>
+        </li>
+        <li class="skill_ask">
+          <p><input type="radio" name="skill" value="10" />HTML+CSS</p>
+        </li>
+        <li class="skill_ask">
+          <p><input type="radio" name="skill" value="20" />JS</p>
+        </li>
+        <li class="skill_ask">
+          <p><input type="radio" name="skill" value="30" />все выше перечисленное</p>
+        </li>
+      </ul>
+      <h3>Укажите свой пол</h3>
+      <ul class="sex list">
+        <li class="sex_ask">
+          <p><input type="radio" name="sex" value="20" checked />Муж.</p>
+        </li>
+        <li class="expiriens_ask">
+          <p><input type="radio" name="sex" value="20" />Жен.</p>
+        </li>
+        <li class="expiriens_ask">
+          <p><input type="radio" name="sex" value="10" />Другое</p>
+        </li>
+      </ul>
+      <input
+        type="button"
+        onclick="myFunction()"
+        value="Отправить"
+        id="startJs"
+      />
+      <input type="reset" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
